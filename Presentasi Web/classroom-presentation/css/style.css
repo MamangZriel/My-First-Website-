@@ -1,0 +1,175 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Header */
+header {
+    background-color: #4CAF50;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+header ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+header ul li {
+    display: inline-block;
+    margin: 0 1rem;
+}
+
+header ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+}
+
+header ul li a:hover {
+    background-color: white;
+    color: #4CAF50;
+    border-radius: 5px;
+}
+
+/* Section Styling */
+.section {
+    padding: 2rem;
+    margin: 1rem;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+.hero {
+    text-align: center;
+    padding: 2rem;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+}
+
+.hero-image {
+    width: 150px;
+    margin-top: 1rem;
+}
+
+/* Features Grid */
+.features-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 1rem;
+}
+
+.feature {
+    background-color: #fff;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    width: 30%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.feature h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.feature p {
+    font-size: 1rem;
+}
+
+/* Form Styling */
+form {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form label, form input, form textarea {
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+}
+
+form button {
+    padding: 0.5rem 1rem;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #45a049;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #4CAF50;
+    color: white;
+}
+
+/* Mobile-Friendly Styling */
+@media (max-width: 768px) {
+    header ul li {
+        display: block;
+        margin: 0.5rem 0;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .hero-image {
+        width: 100px;
+    }
+
+    .features-grid {
+        flex-direction: column;
+    }
+
+    .feature {
+        width: 100%;
+    }
+
+    form label, form input, form textarea {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 1.5rem;
+    }
+
+    .hero p {
+        font-size: 0.9rem;
+    }
+
+    .hero-image {
+        width: 80px;
+    }
+}
